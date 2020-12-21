@@ -1,1 +1,1 @@
-console.log("testiramo");
+(()=>{"use strict";document.getElementById("content").innerHTML="pageload works",console.log("home works"),console.log("menu works"),console.log("about works"),console.log("contact works")})();
