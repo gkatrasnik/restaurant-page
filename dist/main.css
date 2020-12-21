@@ -13,7 +13,8 @@ body {
     align-items: center;
 }
 
-.navbar {    
+.navbar {  
+    width: 100%;  
     overflow: hidden;   
     background-color: rgb(170, 170, 170);
 }
@@ -46,6 +47,12 @@ body {
     background-color: rgb(170, 170, 170);
     text-align: center;
 }
+
+.active {
+    background-color: rgb(170, 144, 80);
+}
+
+
 @media screen and (max-width: 500px) {
     .nav-item {
         text-align: center;
