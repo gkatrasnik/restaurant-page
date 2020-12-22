@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
+html {
+     height:100%;
+}
 
-body {
+body { 
+    position:absolute; top:0; bottom:0; right:0; left:0; 
     margin: 0;
     font-family: 'Caveat', cursive;
     font-size: large;
+
+    background-image: url(bckgimg.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+
+
 h1 {
+    
     text-align: center;
 }
 
-#tab-content {
-    padding: 30px;
-}
 
 .navbar {  
     width: 100%;  
     overflow: hidden;   
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170, 0.5);
     
 }
 
@@ -36,7 +45,8 @@ h1 {
 }
 
 .nav-item:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(230, 164, 40, 0.7);
+    
 }
 
 .tab-text {
@@ -48,16 +58,22 @@ h1 {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(170, 170, 170);
+    height: 5vh;
+    background-color: rgba(170, 170, 170, 0.5);
     text-align: center;
 }
 
-.tab-content {
+#tab-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 80vh;
     
 }
 
 .active {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(230, 164, 40, 0.7);
 }
 
 .logo {
@@ -65,6 +81,17 @@ h1 {
     margin-right: 20px;
     float:right;
 }
+
+.button-container {
+     margin: 5vh auto;
+}
+.menu-button {
+    width: 10vw;
+    height: 6vh;
+    background-color: rgb(207, 207, 207);
+    border-radius: 3px;
+}
+
 @media screen and (max-width: 400px) {
 
     .nav-list {
