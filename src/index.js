@@ -5,10 +5,10 @@ import contact from "./contact";
 import home from "./home";
 
 pageload();
-home();
-menu();
-about();
-contact();
+
+//add event listeners to tabs 
+
+//create each tab content in its own module
 
 
 
