@@ -23,6 +23,11 @@ function pageload() {
     
     navbar.appendChild(navList);
     content.appendChild(navbar);
+
+    const logo = document.createElement("img");
+    logo.src = "logo.png";
+    logo.setAttribute("class", "logo");
+    navbar.appendChild(logo);
     
 
     //Create footer
@@ -35,7 +40,6 @@ function pageload() {
     //Create tabContent div
     const tabContent = document.createElement("div");
     tabContent.setAttribute("id", "tab-content")
-    tabContent.textContent="Tab Content Div"
     content.appendChild(tabContent);
     
     home()

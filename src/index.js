@@ -12,7 +12,8 @@ pageload();
 
 
 //add event listeners to tabs 
-document.querySelectorAll(".nav-item").forEach((item) => {
+const navListItem = document.querySelectorAll(".nav-item");
+navListItem.forEach((item) => {
     item.addEventListener("click", e => {
         if (e.target.id == "Home") {
             home();
@@ -24,6 +25,11 @@ document.querySelectorAll(".nav-item").forEach((item) => {
             contact();
         }
 
+        navListItem.forEach((item) => {
+            item.classList.remove("active")
+        })
+        e.target.classList.add("active")
+        
     })
 })
 
