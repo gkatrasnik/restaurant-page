@@ -8,15 +8,14 @@ body {
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 
 .navbar {  
     width: 100%;  
     overflow: hidden;   
     background-color: rgb(170, 170, 170);
+    
 }
 
 .nav-list {
@@ -46,6 +45,10 @@ body {
     width: 100%;
     background-color: rgb(170, 170, 170);
     text-align: center;
+}
+
+.tab-content {
+    
 }
 
 .active {
