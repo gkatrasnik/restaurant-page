@@ -1,6 +1,8 @@
+import home from "./home";
+import {navListArr} from "./index";
 
  const content = document.getElementById("content")
- const navListArr = ["Home", "Menu", "About", "Contact"];
+ 
 
 function pageload() {
 
@@ -14,7 +16,8 @@ function pageload() {
     navListArr.forEach((i) => {
         let navItem = document.createElement("li");
         navItem.innerHTML=i;
-        navItem.setAttribute("class", "nav-item");
+        navItem.setAttribute("id", i);
+        navItem.setAttribute("class", "nav-item")
         navList.appendChild(navItem);
     });
     
@@ -29,13 +32,14 @@ function pageload() {
     content.appendChild(footer);
 
 
-    //Create tab content div
+    //Create tabContent div
     const tabContent = document.createElement("div");
-    tabContent.setAttribute("class", "tab-content")
+    tabContent.setAttribute("id", "tab-content")
     tabContent.textContent="Tab Content Div"
     content.appendChild(tabContent);
-
+    
+    home()
 }
     
 
-export default pageload;
+export default pageload ;

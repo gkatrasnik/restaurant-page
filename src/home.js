@@ -1,8 +1,9 @@
-const tabContent = document.getElementById("tab-content")
+
 
 function home() {
-    console.log("home works");
-    tabContent.textContent="Home"
+    const tabContent = document.getElementById("tab-content")
+    tabContent.textContent = "HOME CONTENT"
+    
 }
 
 export default home;

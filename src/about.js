@@ -1,5 +1,6 @@
 function about() {
-    console.log("about works");
+    const tabContent = document.getElementById("tab-content")
+    tabContent.textContent = "ABOUT CONTENT"
 }
 
 export default about;
