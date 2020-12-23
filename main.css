@@ -10,10 +10,7 @@ body {
     font-family: 'Caveat', cursive;
     font-size: large;
 
-    background-image: url(bckgimg.jpg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: linear-gradient(to left, rgb(156, 156, 156), rgb(255, 255, 255), rgb(230, 164, 40));
 }
 
 
@@ -59,16 +56,18 @@ h1 {
     bottom: 0;
     width: 100%;
     height: 5vh;
-    background-color: rgba(170, 170, 170, 0.5);
+    background-color: rgba(170, 170, 170, 1);
     text-align: center;
 }
 
 #tab-content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    height: 80vh;
+    min-height: 80vh;
     
 }
 
@@ -82,16 +81,36 @@ h1 {
     float:right;
 }
 
-.button-container {
-     margin: 5vh auto;
-}
+
 .menu-button {
+    margin: auto;
+    min-width: 10vw;
     width: 10vw;
     height: 6vh;
     background-color: rgb(207, 207, 207);
     border-radius: 3px;
 }
 
+
+
+.food-div {
+    margin: auto;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.food-img{
+    height: 30vh;
+    margin: auto;
+}
+
+.food-text {
+    max-width: 60vw;
+}
 @media screen and (max-width: 400px) {
 
     .nav-list {
