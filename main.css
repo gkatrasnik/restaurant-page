@@ -10,17 +10,18 @@ body {
     font-family: 'Caveat', cursive;
     font-size: large;
 
-    background-image: linear-gradient(to left, rgb(156, 156, 156), rgb(255, 255, 255), rgb(230, 164, 40));
+    background-color:rgb(156, 156, 156);
 }
 
-
-
 h1 {
-    
+    font-size: 300%;
     text-align: center;
 }
 
-
+p {
+    font-size: larger;
+    font-weight: 500;
+}
 .navbar {  
     width: 100%;  
     overflow: hidden;   
@@ -29,7 +30,6 @@ h1 {
 }
 
 .nav-list {
-    
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -65,10 +65,11 @@ h1 {
     padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    align-items: center;    
     min-height: 80vh;
-    
+    background-image: url("bckgimg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .active {
@@ -82,36 +83,39 @@ h1 {
 }
 
 
-.menu-button {
-    margin: auto;
-    min-width: 10vw;
-    width: 10vw;
+.menu-button {    
+    font-size: large;
     height: 6vh;
+    width: 10vw;
+    min-width: min-content;
     background-color: rgb(207, 207, 207);
     border-radius: 3px;
 }
 
 
 
-.food-div {
-    margin: auto;
+.food-div {    
     margin-bottom: 3vh;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     border-bottom: 1px solid black;
 }
 
 .food-img{
     height: 30vh;
-    margin: auto;
+    
 }
 
 .food-text {
     max-width: 60vw;
 }
-@media screen and (max-width: 400px) {
+
+.home-title {
+    margin-top: 12%;
+}
+@media screen and (max-width: 600px) {
 
     .nav-list {
         margin: 0;
