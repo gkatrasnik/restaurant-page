@@ -2,6 +2,11 @@ function menu() {
     const tabContent = document.getElementById("tab-content")
     tabContent.innerHTML ="";
     
+    const title = document.createElement("h1");
+    title.textContent = "Menu"
+    tabContent.appendChild(title);
+
+
     var imgArray = new Array();
     imgArray[0] = new Image();
     imgArray[0].src = 'steak.jpeg';
@@ -15,6 +20,7 @@ function menu() {
     imgArray[2].src = 'pancakes.jpeg';
     imgArray[2].alt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris odio, hendrerit at ultrices ac"
     imgArray[2].price = "10";
+
 
     
     function createImg(picture) {

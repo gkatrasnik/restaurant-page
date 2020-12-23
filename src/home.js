@@ -7,6 +7,7 @@ function home() {
 
     const title = document.createElement("h1");
     title.textContent = "Welcome to our Restaurant"
+    title.setAttribute("class", "home-title");
     tabContent.appendChild(title);
     
 
