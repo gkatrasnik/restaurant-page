@@ -3,5 +3,5 @@
 Odin project restaurant page\
 https://gkatrasnik.github.io/restaurant-page/
 
-dynamically rendered pages.\
+Dynamically rendered pages.\
 Bundeled with Webpack.
